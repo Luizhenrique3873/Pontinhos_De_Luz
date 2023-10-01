@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <label for="pais">digite seu país</label>
+        <input type="text" id="pais"></input>
+        <button onclick="proximo()">proximo</button>
+        <div id="resultado">
+        </div>
+    <script>
+        function proximo() {
+            var pais = document.getElementById("pais").value;
+            if (pais == "brasil"){
+                document.getElementById("resultado").innerHTML = "você é Brasileiro";
+            }
+            else {
+                document.getElementById("resultado").innerHTML = "Você é estrangeiro";
+            }
+        }
+    </script>
+</body>
+
+</html>

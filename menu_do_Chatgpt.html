@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="hello.css">
+</head>
+<body>
+    <header>
+        <a id="men" href="#" onclick="abrir()"><span class="material-symbols-outlined">menu</span></a>
+        <div id="menu">
+            <div id="dconteudo"><a id="conteudo" href="javascript:void(0);" onclick="carregarBoletos()">Boletos</a></div>
+        </div>
+        <div class="logo">
+            <img src="logotipo.png" alt="Logo da Escola">
+        </div>
+    </header>
+    <main>
+        <iframe id="iframePrincipal" src="" width="100%" height="500"></iframe>
+    </main>
+    <script>
+        function abrir() {
+            var dconteudo = document.getElementById('dconteudo');
+            if (dconteudo.style.display == 'block') {
+                dconteudo.style.display = 'none';
+            } else {
+                dconteudo.style.display = 'block';
+            }
+        }
+
+        function carregarBoletos() {
+            var iframePrincipal = document.getElementById('iframePrincipal');
+            iframePrincipal.src = 'tabela.html'; // Atualize aqui com a URL da página de boletos
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+th, td {
+    border: 1px solid black;
+}
+table {
+    border-collapse: collapse;
+    margin: auto;
+    width: 500px;
+    text-align: center;
+    width: 400px;
+}
+.pago {
+    background-color:rgba(13, 239, 13, 0.436) ;
+}
+.pendente {
+    background-color: rgba(255, 0, 0, 0.338);
+}
