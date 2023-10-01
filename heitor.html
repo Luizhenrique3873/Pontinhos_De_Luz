@@ -39,16 +39,11 @@
             }
         }
         function abrirboletos(){
+            conteudo.style.display = 'none'
             var tela = document.getElementById("tela")
             tela.src = "tabela.html";
         }
-        document.addEventListener("click", function (event) {
-            var menu = document.getElementById("menu");
-            var menButton = document.getElementById("men");
-            if (menu.style.display == 'block' && event.target != menu && event.target != menButton) {
-                menu.style.display = 'none';
-            }
-        });
+        
     </script>
 </body>
 </html>
