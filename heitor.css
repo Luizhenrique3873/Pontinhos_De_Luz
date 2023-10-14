@@ -35,7 +35,7 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
-#conteudo{
+#conteudoheader{
     display: none;
     background-color: rgb(255, 255, 255);
     width: 200px;
@@ -51,8 +51,9 @@ footer {
 #conteudo {
     text-decoration: none;
     color: black;
-    font-size: 20px;
+    font-size: 16px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 #menu {
     float: left;
@@ -74,9 +75,35 @@ iframe{
 menu{
     width: 100px;
 }
-#boletos{
+#boletosh{
     user-select: none;
+    display: none;
 }
 #menuid{
     width: 30px;
+}
+@media screen and (max-width: 768px) {
+    #men{
+        display: none;
+    }
+    #conteudoheader{
+        display: none;
+    }
+    #conteudo{
+        display: block;
+        margin-left: 262px;
+        text-decoration: none;
+        text-align: center;
+        height: auto;
+        width: 100px;
+        background-color: rgb(46, 149, 46);
+        color: white;
+        border-radius: 10px;
+        padding: 5px;
+        user-select: none;
+        position: absolute;
+    }
+    #conteudo:hover{
+        background-color: rgb(81, 255, 81);
+    }
 }
