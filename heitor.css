@@ -91,17 +91,18 @@ menu{
     }
     #conteudo{
         display: block;
-        margin-left: 262px;
+        margin: auto;
         text-decoration: none;
         text-align: center;
-        height: auto;
+        height: 30px;
         width: 100px;
         background-color: rgb(46, 149, 46);
         color: white;
         border-radius: 10px;
-        padding: 5px;
+        padding-top: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
         user-select: none;
-        position: absolute;
     }
     #conteudo:hover{
         background-color: rgb(81, 255, 81);
