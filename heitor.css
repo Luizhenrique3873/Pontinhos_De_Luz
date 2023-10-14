@@ -16,13 +16,16 @@ header {
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    height: 100px;
+    
 }
 main {
-    flex: 1; /* Faz o conteúdo principal crescer para ocupar o espaço restante
+    /*flex: 1;  Faz o conteúdo principal crescer para ocupar o espaço restante
             com essa configuração o footer fica sompre encostado em baixo */
     border: 1px solid black;
     text-align: center;
     margin: 20px;
+    height: 500px;
 }
 .logo img {
     max-width: 160px;
@@ -33,7 +36,7 @@ footer {
     background-image:linear-gradient(to bottom,  rgba(255, 255, 0, 0.693), rgba(0, 255, 98, 0.66));
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px;
 }
 #conteudoheader{
     display: none;
@@ -45,10 +48,10 @@ footer {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.411);
     margin-top: 60px;
 }
-#conteudo :hover{
+#conteudoheader :hover{
     background-color: rgb(184, 184, 184);
 }
-#conteudo {
+#conteudoheader {
     text-decoration: none;
     color: black;
     font-size: 16px;
@@ -95,7 +98,7 @@ menu{
         text-decoration: none;
         text-align: center;
         height: 30px;
-        width: 100px;
+        width: 150px;
         background-color: rgb(46, 149, 46);
         color: white;
         border-radius: 10px;
