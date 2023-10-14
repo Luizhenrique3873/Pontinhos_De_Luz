@@ -4,9 +4,9 @@ th, td {
 table {
     border-collapse: collapse;
     margin: auto;
-    width: 500px;
+    width: 300px;
     text-align: center;
-    width: 400px;
+    width: 300px;
 }
 .pago {
     background-color:rgba(13, 239, 13, 0.436) ;
