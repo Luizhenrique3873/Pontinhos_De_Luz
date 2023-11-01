@@ -34,13 +34,16 @@
             if(ai.style.opacity == 0 || ai.style.opacity == ""){
                 ai.style.opacity = 1;
                 caixaVerde.style.height = "500px"
+                caixaVerde.style.width = "330px"
                 cabeca.style.opacity = 0;
                 caixaVerde.style.transform = "translateY(-100px)"
             }
             else{
                 caixaVerde.style.transform = ""
-                ai.style.opacity = 0;
                 caixaVerde.style.height = ""
+                caixaVerde.style.width = ""
+                ai.style.opacity = 0;
+                
                 cabeca.style.opacity = 1;
             }
         }
