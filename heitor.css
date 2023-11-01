@@ -31,15 +31,14 @@ main {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.429);
     transition-duration: 0.3s;
-    transition-property: height transform;
+    transition-property: height width transform;
     transition-timing-function: ease-in-out;
 }
 .logo img {
     width: 150px;
 }
 #conteudo{
-    margin-top: 10px;
-    margin-left: 80px;
+    margin: auto;
     text-decoration: none;
     text-align: center;
     height: 30px;
@@ -53,6 +52,9 @@ main {
     user-select: none;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.455);
     margin-bottom: 10px;
+}
+#conteudo:active{
+    background-color: rgb(79, 173, 173);
 }
 #conteudo:hover{
     background-color: rgb(81, 255, 81);
