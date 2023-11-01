@@ -3,14 +3,11 @@ th, td {
 }
 table {
     border-collapse: collapse;
-    margin: auto;
-    width: 100px;
     text-align: center;
-    height: 80px;
 }
 .pago {
-    background-color:rgba(13, 239, 13, 0.436) ;
+    background-color:rgb(0, 255, 0) ;
 }
 .pendente {
-    background-color: rgba(255, 0, 0, 0.338);
+    background-color: rgba(255, 0, 0, 0.541);
 }
