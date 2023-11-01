@@ -52,6 +52,7 @@ main {
     padding-right: 5px;
     user-select: none;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.455);
+    margin-bottom: 10px;
 }
 #conteudo:hover{
     background-color: rgb(81, 255, 81);
