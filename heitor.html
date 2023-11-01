@@ -9,11 +9,7 @@
     <link rel="icon" href="logotipo.png" type="image/png">
 </head>
 <body>
-    <header>
-        <a id="men" href="#" onclick="abrir()"><span><img id="menuid" src="menu.png" alt=""></span></a>
-        <div id="menu">
-            <a id="conteudoheader" ><p id="boletosh" onclick="abrirboletos()">Boletos</p></a>
-        </div>
+    <header  id="cab">
         <div class="logo">
             <img src="logotipo.png" alt="Logo da Escola">
         </div>
@@ -26,25 +22,30 @@
             <p><strong>Periodo:</strong> Meio Periodo (09:00 ás 15:00)</p>
             <p><strong>Data de Nasc:</strong> 23/08/2018</p>
             <p><strong>Idade:</strong> 5 Anos</p>
-            <a id="conteudo" onclick="abrirboletos()">PAGAMENTOS</a>
+            <div id="conteudo" onclick="abrirboletos()">PAGAMENTOS</div>
         </div>
-        <iframe id="tela" src=""></iframe>
+        <iframe id="frame" src="tabela.html" frameborder="0" width="100%" height="300px"></iframe>
     </main>
     <script>
-        function abrir(){
-            if(conteudo.style.display == 'block'){
-               conteudo.style.display = 'none'; 
+        function abrirboletos(){
+            var ai = document.getElementById("frame")
+            var caixaVerde = document.querySelector("main")
+            var cabeca = document.getElementById("cab")
+            if(ai.style.opacity == 0 || ai.style.opacity == ""){
+                ai.style.opacity = 1;
+                caixaVerde.style.height = "500px"
+                caixaVerde.style.width = "300px"
+                cabeca.style.opacity = 0;
+                caixaVerde.style.transform = "translateY(-100px)"
             }
             else{
-                conteudo.style.display = 'block';
+                caixaVerde.style.transform = ""
+                ai.style.opacity = 0;
+                caixaVerde.style.height = ""
+                caixaVerde.style.width = ""
+                cabeca.style.opacity = 1;
             }
         }
-        function abrirboletos(){
-            conteudo.style.display = 'none'
-            var tela = document.getElementById("tela")
-            tela.src = "tabela.html";
-        }
-        
     </script>
 </body>
 </html>
