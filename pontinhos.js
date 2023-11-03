@@ -4,6 +4,6 @@ function ir() {
     window.location.href = "heitor.html";
     }
     else {
-    document.getElementById("vai").innerHTML = "o cpf não foi encontrado";
+    document.getElementById("vai").innerHTML = "O CPF Não Foi Encontrado";
     }
 }
