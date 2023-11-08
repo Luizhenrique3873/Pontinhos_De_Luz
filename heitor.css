@@ -64,4 +64,6 @@ main {
     transition-property: opacity;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
+    background-color: white;
+    border-radius: 10px;
 }
