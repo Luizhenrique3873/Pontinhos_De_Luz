@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontinhos De Luz</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="heitor.css">
+    <link rel="icon" href="logotipo.png" type="image/png">
+</head>
+<body>
+    <header  id="cab">
+        <div class="logo">
+            <img src="logotipo.png" alt="Logo da Escola">
+        </div>
+    </header>
+    <main>
+        
+        <div id="aluno">
+            <h1>Informações do Aluno</h1>
+            <p><strong>Nome:</strong> Rhavi Fonseca de Souza </p>
+            <p><strong>Periodo:</strong> Integral (06:30 ás 16:30)</p>
+            <p><strong>Data de Nasc:</strong> 29/10/2019</p>
+            <p><strong>Idade:</strong> 4 anos</p>
+            <div id="conteudo" onclick="abrirboletos()">PAGAMENTOS</div>
+        </div>
+        <iframe id="frame" src="tabelaRhavi.html" frameborder="0" width="98%" height="290px"></iframe>
+    </main>
+    <script>
+        function abrirboletos(){
+            var ai = document.getElementById("frame")
+            var caixaVerde = document.querySelector("main")
+            var cabeca = document.getElementById("cab")
+            if(ai.style.opacity == 0 || ai.style.opacity == ""){
+                ai.style.opacity = 1;
+                caixaVerde.style.height = "500px"
+                caixaVerde.style.width = "330px"
+                cabeca.style.opacity = 0;
+                caixaVerde.style.transform = "translateY(-100px)"
+            }
+            else{
+                caixaVerde.style.transform = ""
+                caixaVerde.style.height = ""
+                caixaVerde.style.width = ""
+                ai.style.opacity = 0;
+                
+                cabeca.style.opacity = 1;
+            }
+        }
+    </script>
+</body>
+</html>
