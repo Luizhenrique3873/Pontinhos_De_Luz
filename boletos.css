@@ -9,7 +9,7 @@ table {
     border-collapse: collapse;
     text-align: center;
     margin: auto;
-    transform: scaleX(1.1);
+    transform: scaleX(0.9);
     margin-top: 15px;
 }
 .pago {
