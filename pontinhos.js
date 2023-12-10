@@ -16,3 +16,8 @@ function ir() {
     document.getElementById("vai").innerHTML = "O CPF Não Foi Encontrado";
     }
 }
+function entrar(event){
+    if(event.key === "Enter"){
+        ir();
+    }
+}
