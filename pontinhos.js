@@ -3,13 +3,13 @@ function ir() {
     if (cpfvar == "41193446813"){
         window.location.href = "heitor.html";
     }
-    if (cpfvar == "44741454886" || cpfvar == "44303201871"){
+    else if (cpfvar == "44741454886" || cpfvar == "44303201871"){
         window.location.href = "rhavi.html";
     }
-    if (cpfvar == "05606644355"){
+    else if (cpfvar == "05606644355"){
         window.location.href = "lucca.html";
     }
-    if (cpfvar == "36021457862"){
+    else if (cpfvar == "36021457862"){
         window.location.href = "luan.html";
     }
     else {
